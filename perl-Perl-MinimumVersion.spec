@@ -13,6 +13,7 @@ Source:     http://www.cpan.org/modules/by-module/Perl/%{realname}-%{version}.ta
 Url:        http://search.cpan.org/dist/%{realname}
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: perl-devel
+BuildRequires: perl(PPI)
 BuildRequires: perl(Test::Script)
 
 
