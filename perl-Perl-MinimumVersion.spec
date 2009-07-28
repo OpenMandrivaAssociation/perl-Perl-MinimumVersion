@@ -1,26 +1,23 @@
+%define upstream_name    Perl-MinimumVersion
+%define upstream_version 1.20
 
-%define realname   Perl-MinimumVersion
-%define version    1.20
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Find a minimum required version of perl for Perl code
-Source:     http://www.cpan.org/modules/by-module/Perl/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Find::Rule::Perl)
 BuildRequires: perl(PPI)
 BuildRequires: perl(Test::Script)
 BuildRequires: perl(version) >= 0.76
-
-
 BuildArch: noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 'Perl::MinimumVersion' takes Perl source code and calculates the minimum
@@ -33,7 +30,7 @@ version dependencies such as 'require 5.005'.
 Future plans are to also add support for tracing module dependencies.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -56,4 +53,3 @@ rm -rf %buildroot
 %perl_vendorlib/*
 /usr/bin/perlver
 /usr/share/man/man1/perlver.1.lzma
-
