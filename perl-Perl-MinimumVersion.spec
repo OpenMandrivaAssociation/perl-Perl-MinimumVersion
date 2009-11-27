@@ -14,8 +14,10 @@ Source0:    http://www.cpan.org/modules/by-module/Perl/%{upstream_name}-%{upstre
 BuildRequires: perl(File::Find::Rule)
 BuildRequires: perl(File::Find::Rule::Perl)
 BuildRequires: perl(PPI)
+BuildRequires: perl(Perl::Critic::Utils)
 BuildRequires: perl(Test::Script)
 BuildRequires: perl(version) >= 0.76
+
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
