@@ -1,5 +1,5 @@
 %define upstream_name    Perl-MinimumVersion
-%define upstream_version 1.25
+%define upstream_version 1.26
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
