@@ -51,7 +51,6 @@ rm -rf %buildroot
 %files
 %defattr(-,root,root)
 %doc LICENSE README Changes
-%{_mandir}/man3/*
+%{_mandir}/man?/*
 %perl_vendorlib/*
-/usr/bin/perlver
-/usr/share/man/man1/perlver.1.lzma
+%{_bindir}/perlver
