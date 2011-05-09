@@ -1,9 +1,9 @@
 %define upstream_name    Perl-MinimumVersion
-%define upstream_version 1.26
+%define upstream_version 1.28
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Find a minimum required version of perl for Perl code
 License:    GPL+ or Artistic
