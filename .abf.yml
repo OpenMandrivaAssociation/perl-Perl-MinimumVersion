@@ -1,2 +1,4 @@
+removed_sources:
+  Perl-MinimumVersion-1.28.tar.gz: d7024cfe00177972ecefa4e818b53f1278f9a28e
 sources:
-  "Perl-MinimumVersion-1.28.tar.gz": d7024cfe00177972ecefa4e818b53f1278f9a28e
+  Perl-MinimumVersion-1.32.tar.gz: 5863b5d7f97c9d0727d80d12fbd9ac34217a2d75
