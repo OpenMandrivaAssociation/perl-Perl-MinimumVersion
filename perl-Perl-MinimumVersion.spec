@@ -1,7 +1,8 @@
 %define modname	Perl-MinimumVersion
-%define modver 1.35
+%define modver 1.37
 
 Summary:	Find a minimum required version of perl for Perl code
+
 
 
 Name:		perl-%{modname}
@@ -49,6 +50,7 @@ make test
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
 
