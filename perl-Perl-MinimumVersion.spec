@@ -1,5 +1,5 @@
 %define modname	Perl-MinimumVersion
-%define modver 1.37
+%define modver 1.38
 
 Summary:	Find a minimum required version of perl for Perl code
 
@@ -7,7 +7,7 @@ Summary:	Find a minimum required version of perl for Perl code
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -50,8 +50,3 @@ make test
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-
-
-
-
-
