@@ -10,7 +10,7 @@ Version:	%perl_convert_version %{modver}
 Release:	5
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Perl/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(File::Find::Rule)
